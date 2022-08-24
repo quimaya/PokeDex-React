@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import {axios} from "axios"
+import axios from "axios"
 
 import React from 'react'
 import PokeCard from './components/PokeCard';
@@ -29,7 +29,7 @@ const App = () => {
 
     <input onChange= {() => 
       setKeyword(search.value)} type='text' id='search'/>
-    <button onClick={()=>searchPokemon}>Buscador de Pokemon</button>
+    <button onClick={()=>searchPokemon()}>Buscador de Pokemon</button>
     <button onClick={()=>setPokemon(null) && setKeyword("")}>RESET</button>
     <PokeCard pokemon = {pokemon}/>
      
